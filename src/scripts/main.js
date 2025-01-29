@@ -6,7 +6,7 @@ function printResume() {
 }
 
 function downloadResume() {
-  const resumePath = "../assets/docs/Pieter Marx Resume.pdf";
+  const resumePath = "https://TheRealPieterMarx.github.io/Pieter-Marx-Resume/assets/docs/Pieter Marx Resume.pdf";
   const link = document.createElement("a");
   link.href = resumePath;
   link.download = "Pieter Marx Resume.pdf";
