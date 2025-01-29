@@ -5,7 +5,7 @@ function printResume() {
   window.print();
 }
 
-function downloadResume() {
+/*function downloadResume() {
   const resumePath = "https://TheRealPieterMarx.github.io/Pieter-Marx-Resume/assets/docs/Pieter Marx Resume.pdf";
   const link = document.createElement("a");
   link.href = resumePath;
@@ -15,7 +15,9 @@ function downloadResume() {
   document.body.removeChild(link);
 }
 
+
 document.getElementById("download").addEventListener("click", function (event) {
   event.preventDefault();
   downloadResume();
 });
+*/
