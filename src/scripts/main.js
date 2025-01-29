@@ -19,4 +19,4 @@ function downloadResume() {
 document.getElementById("download").addEventListener("click", function (event) {
   event.preventDefault();
   downloadResume();
-});
+}); 
