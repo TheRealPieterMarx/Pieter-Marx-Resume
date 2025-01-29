@@ -1,0 +1,248 @@
+html {
+    font-size: 80%;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: #424242;
+  }
+  
+  .header {
+    padding-top: 2rem;
+    width: 100%;
+    height: max-content;
+    background-color: #424242;
+    background-image: url("https://github.com/TheRealPieterMarx/Pieter-Marx-Resume/assets/images/background.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    margin-bottom: 7rem;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 4rem;
+  }
+  
+  .header h2 {
+    font-size: 1.6rem;
+  }
+  
+  a {
+    color: #48cfcf;
+  }
+  
+  .portrait {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    border: 0.5rem solid #dddddd;
+    background-color: #229799;
+    background-image: url("https://github.com/TheRealPieterMarx/Pieter-Marx-Resume/assets/images/Circuit.gif");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -7rem;
+    object-fit: cover;
+  }
+  
+  section {
+    margin: 2rem;
+  }
+  
+  section p {
+    text-align: justify;
+  }
+  
+  section h2 {
+    color: #229799;
+    margin-bottom: 2rem;
+  }
+  
+  section hr {
+    margin-bottom: 2rem;
+  }
+  
+  .icon {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 10%;
+    float: left;
+    margin: -0.5rem 1rem 1rem 0rem;
+    object-fit: cover;
+  }
+  
+  footer {
+    background-color: #424242;
+    color: white;
+    margin: 0;
+    padding: 1rem 2rem 2rem 3rem;
+  }
+  
+  footer h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  footer ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2rem;
+    list-style: none;
+  }
+  
+  .icon-small {
+    height: 2rem;
+    width: 2rem;
+  }
+  
+  .icon-very-small {
+    height: 1.3rem;
+    width: 1.3rem;
+    border-radius: 10%;
+    float: left;
+    margin-right: 5px;
+    object-fit: cover;
+  }
+  
+  #footer-copyright {
+    text-align: center;
+    font-size: 0.75rem;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+  }
+  
+  .nav-bar {
+    background-color: #229799;
+  }
+  
+  .nav {
+    position: fixed;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav a {
+    margin: 0.25rem 1rem;
+    padding: 0.5rem 1.5rem 0.5rem 0.8rem;
+    background-color: #424242;
+    border-radius: 1rem;
+    align-items: center;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 8px;
+    max-height: 100vh;
+  }
+  
+  .nav a span {
+    color: white;
+  }
+  
+  .nav h2 {
+    color: white;
+    margin: 0.5rem 1rem;
+  }
+  
+  .content {
+    background-color: #dddddd;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      display: grid;
+      grid-template-columns: 70px 1fr;
+    }
+  
+    .nav h2 {
+      display: none;
+    }
+  
+    .nav a {
+      padding: 0.5rem 0.8rem;
+    }
+  
+    .nav a span {
+      display: none;
+    }
+  }
+  
+  section a:link {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #48cfcf;
+  }
+  
+  section a:visited {
+    color: #229799;
+  }
+  
+  section a:hover {
+    color: #229799;
+    text-decoration: underline;
+  }
+  
+#contact-print {
+    display: none;
+}
+
+  @media print {
+    body {
+      margin: 0;
+      font-size: 12px;
+      background-color: white;
+    }
+  
+    .nav-bar{
+        display: none;
+    }
+
+    .content {
+      background-color: white;
+      grid-column: 1 / -1;
+    }
+
+    .portrait {
+        border: 0.5rem solid white;
+    }
+    
+    footer {
+        display: none;
+    }
+
+    section {
+      margin: 1rem;
+    }
+
+    .high-school-education {
+        page-break-after: always;
+      }
+
+    #contact-print {
+        display: block;
+        color: white;
+        margin: 0;
+        text-align: left;
+        position: absolute;
+        top: 12rem;
+        left: 2rem;
+    }
+      
+    #contact-print h2 {
+        font-size: 1.6rem;
+        margin-bottom: 0.25rem;
+      }
+      
+    #contact-print ul {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 2rem;
+        list-style: none;
+      }
+  }
+  
