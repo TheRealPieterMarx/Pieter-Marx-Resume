@@ -1,5 +1,5 @@
 document.getElementById("footer-copyright").innerHTML =
-  "© " + new Date().getFullYear() + " Pieter Marx. All Rights Reserved.<br/>(Not really.. ;D)";
+  "© " + new Date().getFullYear() + " Pieter Marx. Alle Regte Voorbehou.<br/>(Nie Regtig Nie.. ;D)";
 
 function printResume() {
   window.print();
@@ -20,3 +20,4 @@ document.getElementById("download").addEventListener("click", function (event) {
   event.preventDefault();
   downloadResume();
 }); 
+
