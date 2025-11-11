@@ -6,10 +6,10 @@ function printResume() {
 }
 
 function downloadResume() {
-  const resumePath = "https://TheRealPieterMarx.github.io/Pieter-Marx-Resume/assets/docs/Pieter Marx Resume.pdf";
+  const resumePath = "https://TheRealPieterMarx.github.io/Pieter-Marx-Resume/assets/docs/Pieter Marx CV.pdf";
   const link = document.createElement("a");
   link.href = resumePath;
-  link.download = "Pieter Marx Resume.pdf";
+  link.download = "Pieter Marx CV.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -20,4 +20,5 @@ document.getElementById("download").addEventListener("click", function (event) {
   event.preventDefault();
   downloadResume();
 }); 
+
 
